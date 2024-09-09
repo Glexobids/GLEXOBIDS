@@ -201,48 +201,39 @@
 		/* Truck Listings Styles */
 		
 		.truck-listing {
-			background-color: #f7f7f7;
-			padding: 20px;
-			margin: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			width: calc(33.33% - 20px);
-			display: inline-block;
-		}
-		
-		.truck-listing h2 {
-			font-size: 24px;
-			color: #333;
-			margin-bottom: 10px;
-		}
-		
-		.truck-listing img {
-			width: 100%;
-			height: 200px;
-			object-fit: cover;
-			border-radius: 10px;
-			margin-bottom: 20px;
-		}
-		
-		.truck-listing p {
-			font-size: 20px;
-			color: hsl(210, 50%, 70%);
-			margin-bottom: 20px;
-		}
-		
-		.truck-listing button {
-			background-color: #007bff;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-		
-		.truck-listing button:hover {
-			background-color: #0056b3;
-		}
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.truck-listing:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.truck-listing img {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.truck-listing button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.truck-listing button:hover {
+  background-color: #0056b3;
+}
+
 		
 		/* Footer Styles */
 		
