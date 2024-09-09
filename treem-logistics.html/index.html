@@ -67,7 +67,25 @@
 	<p>Rent tankers for your liquid transportation needs.</p>
 	<button>Search Nearest Truck & Book</button>
 </section>
-
+<section class="booking">
+  <h2>Book Your Truck</h2>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="tel" placeholder="Phone Number">
+    <select>
+      <option>Choose Truck Type</option>
+      <option>MCV</option>
+      <option>HCV</option>
+      <option>MAV</option>
+      <option>Tipper Truck</option>
+      <option>Refrigerated Truck</option>
+      <option>Tanker</option>
+    </select>
+    <input type="date" placeholder="Date">
+    <button>Book Now</button>
+  </form>
+</section>	
 	</main>
 
 <footer>
@@ -107,18 +125,17 @@
 		}
 		
 		.logo {
-			margin: 0;
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-		}
-		
-		.logo img {
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-		}
-		
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px; /* Reduce logo section height */
+}
+.logo img {
+  width: 50px; /* Reduce logo image size */
+  height: 50px;
+  border-radius: 50%;
+}
 		/* Navigation Styles */
 		
 		nav {
@@ -177,7 +194,10 @@
 		#search button:hover {
 			background-color: #0056b3;
 		}
-		
+			
+		#search {
+  width: 100%; /* Make search bar full length */
+}
 		/* Truck Listings Styles */
 		
 		.truck-listing {
@@ -227,12 +247,13 @@
 		/* Footer Styles */
 		
 		footer {
-			background-color: #333;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-			clear: both;
-		}
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  background-image: linear-gradient(to bottom, #444, #333); /* Add background gradient */
+}
 		
 		.copyright {
 			font-size: 14px;
