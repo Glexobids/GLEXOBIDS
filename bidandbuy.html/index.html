@@ -4,7 +4,64 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bid&Buy</title>
-	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 1em;
+			text-align: center;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			background-color: #333;
+			padding: 1em;
+		}
+		
+		nav li {
+			margin-right: 20px;
+		}
+		
+		nav a {
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		nav a:hover {
+			color: #ccc;
+		}
+		
+		nav .active {
+			color: #fff;
+			background-color: #444;
+			padding: 0.5em;
+			border-radius: 5px;
+		}
+		
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 1em;
+			text-align: center;
+			clear: both;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -24,68 +81,9 @@
 	<footer>
 		<p>&copy; 2024 Bid&Buy</p>
 	</footer>
-	<script src="script.js"></script>
+	<script>
+		// JavaScript code goes here
+		console.log("Bid&Buy is ready!");
+	</script>
 </body>
 </html>
-
-*styles.css*
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 1em;
-	text-align: center;
-}
-
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	background-color: #333;
-	padding: 1em;
-}
-
-nav li {
-	margin-right: 20px;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #ccc;
-}
-
-nav .active {
-	color: #fff;
-	background-color: #444;
-	padding: 0.5em;
-	border-radius: 5px;
-}
-
-main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-footer {
-	background-color: #333;
-	color: #fff;
-	padding: 1em;
-	text-align: center;
-	clear: both;
-}
-
-*script.js*
-// JavaScript code goes here
-console.log("Bid&Buy is ready!");
