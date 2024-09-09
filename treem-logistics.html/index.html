@@ -123,14 +123,28 @@
   justify-content: flex-end;
   align-items: center;
   height: 50px;
+  background: transparent; /* Set background to transparent */
+  padding: 0;
+  border: none;
+}
+
+.logo img {
   background: none;
   padding: 0;
+  border: none;
+  width: 40px; /* Adjust the width to your liking */
+  height: auto;
+  object-fit: contain; /* Add this to scale the image correctly */
 }
-		.logo img {
-			width: 75px;
-			height: 75px;
-			border-radius: 50%;
-		}
+
+header {
+  background-color: transparent;
+  padding-top: 10px; /* Add padding to top */
+  padding-bottom: 10px; /* Add padding to bottom */
+  padding-left: 0; /* Remove padding from left */
+  padding-right: 0; /* Remove padding from right */
+}
+
 		/* Navigation Styles */
 		nav {
 			display: flex;
