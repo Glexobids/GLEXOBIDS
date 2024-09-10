@@ -22,7 +22,18 @@
   top: 0;
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
 }
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  vertical-align: middle;
+  background: transparent;
+}
+
 .logo img {
   width: 100%;
   height: 100%;
@@ -30,13 +41,6 @@
   border: none;
   background-clip: padding-box;
 }
-		.logo {
-			width: 50px;
-			height: 50px;
-			margin-right: 20px;
-			vertical-align: middle;
-			background: transparent;
-		}
 	
 		main {
 			display: flex;
@@ -87,10 +91,14 @@
 </head>
 <body>
 	<header>
-		<nav>
-			<img src="momsmagickitchen-logo.png" alt="Mom's Magic Kitchen Logo" class="logo">
-		</nav>
-	</header>
+  <nav style="display: flex; justify-content: space-between;">
+    <div style="display: flex; align-items: center;">
+    </div>
+    <div class="logo">
+      <img src="momsmagickitchen-logo.png" alt="Mom's Magic Kitchen Logo">
+    </div>
+  </nav>
+</header>
 	<main>
 		<section class="products">
 			<h2>Masala Powders</h2>
