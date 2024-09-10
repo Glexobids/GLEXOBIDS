@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mom's Magic Kitchen</title>
 	<link rel="stylesheet" href="style.css">
-	
-</head>
+	<script src="script.js"></script>
+	</head>
 <body>
 	<header>
     </div>
@@ -230,3 +230,148 @@
 	</footer>
 </body>
 </html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    background-image: none;
+  }
+
+  header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+    background: transparent;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+    padding: 1em;
+  }
+
+  nav li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    color: #ccc;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .product h3 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .product p {
+    margin-bottom: 1em;
+  }
+
+  .product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .product button:hover {
+    background-color: #444;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    width: 100%;
+  }
+
+  /* Add this to enable scrolling */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  /* Add this to make logo scroll up and down */
+  header .logo {
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+  }
+
+  header.scrolled .logo {
+    top: -50px;
+  }
+</style>
+<script>
+  window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    if (window.scrollY > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
