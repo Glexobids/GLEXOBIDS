@@ -97,16 +97,22 @@
 			clear: both;
 		}
 		@media only screen and (max-width: 600px) {
+  .product-card {
+    width: 100%;
+  }
+  .product-cards {
+    flex-direction: column;
+  }
   .product-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    max-width: 100%;
+  }
+  nav li {
+    margin-right: 0;
   }
 }
-			nav li {
-				margin-right: 0;
-			}
-		}
 	</style>
 </head>
 <body>
