@@ -25,16 +25,11 @@ header {
   background-color: #333;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
+.logo img {
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
   vertical-align: middle;
-  background: none;
-  background-image: none;
-  border: none;
-  padding: 0;
-  opacity: 1;
 }
 
 nav ul {
@@ -75,20 +70,13 @@ main {
   padding-top: 70px;
 }
 
-.product-listing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
-}
-
-.product-cards {
+.product-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.product-card {
+.product {
   margin: 1em;
   padding: 1em;
   border: 1px solid #ccc;
@@ -96,23 +84,22 @@ main {
   width: calc(33.33% - 20px);
 }
 
-.product-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.product-card h3 {
+.product h3 {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 
-.product-card p {
+.product p {
   margin-bottom: 1em;
 }
 
-.product-card button {
+.product button {
   background-color: #333;
   color: #fff;
   border: none;
@@ -121,7 +108,7 @@ main {
   cursor: pointer;
 }
 
-.product-card button:hover {
+.product button:hover {
   background-color: #444;
 }
 
@@ -131,20 +118,16 @@ footer {
   padding: 1em;
   text-align: center;
   clear: both;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
-  .product-card {
-    width: 100%;
-  }
-  .product-cards {
+  .product-grid {
     flex-direction: column;
   }
-  .product-card img {
+  .product {
+    margin-bottom: 20px;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-width: 100%;
   }
   nav li {
     margin-right: 0;
@@ -153,11 +136,8 @@ footer {
   nav a {
     padding: 5px;
   }
-  .logo {
-    width: 30px;
-    height: 30px;
-  }
 }
+
 	</style>
 </head>
 <body>
