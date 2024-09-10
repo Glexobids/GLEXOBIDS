@@ -97,9 +97,16 @@
 			clear: both;
 		}
 		@media only screen and (max-width: 600px) {
-			nav ul {
-				flex-direction: column;
-			}
+  .product-card {
+    width: 100%;
+  }
+  .product-cards {
+    flex-direction: column;
+  }
+  .product-card {
+    margin: 0;
+    padding: 1em;
+  }
 			nav li {
 				margin-right: 0;
 			}
@@ -123,41 +130,44 @@
 			<h2>Products</h2>
 			<div class="product-cards">
 				<!-- Product Card 1 -->
-				<div class="product-card">
-					<img src="product1.jpg" alt="Product 1">
-					<h3>Product 1</h3>
-					<p>Product Description 1</p>
-					<p>Bid Price: ₹200</p>
-					<p>Time Remaining: 2 days</p>
-					<button>Bid Now</button>
-				</div>
-				<!-- Product Card 2 -->
-				<div class="product-card">
-					<img src="product2.jpg" alt="Product 2">
-					<h3>Product 2</h3>
-					<p>Product Description 2</p>
-					<p>Bid Price: ₹400</p>
-					<p>Time Remaining: 1 day</p>
-					<button>Bid Now</button>
-				</div>
-				<!-- Product Card 3 -->
-				<div class="product-card">
-					<img src="product3.jpg" alt="Product 3">
-					<h3>Product 3</h3>
-					<p>Product Description 3</p>
-					<p>Bid Price: ₹700</p>
-					<p>Time Remaining: 1 day</p>
-					<button>Bid Now</button>
-				</div>
-				<!-- Product Card 4 -->
-				<div class="product-card">
-					<img src="product4.jpg" alt="Product 4">
-					<h3>Product 4</h3>
-					<p>Product Description 4</p>
-					<p>Bid Price: ₹1000</p>
-					<p>Time Remaining: 1 day</p>
-					<button>Bid Now</button>
-				</div>
+<div class="product-card">
+  <img src="product1" alt="Cap">
+  <h3>Stylish Cotton Cap</h3>
+  <p>A comfortable and stylish cotton cap perfect for casual wear.</p>
+  <p>Bid Price: ₹200</p>
+  <p>Time Remaining: 2 days</p>
+  <button>Bid Now</button>
+</div>
+
+<!-- Product Card 2 -->
+<div class="product-card">
+  <img src="ptoduct2.jpg" alt="Sunglass">
+  <h3>Trendy Sunglasses</h3>
+  <p>Stay cool and stylish with these trendy sunglasses, perfect for outdoor wear.</p>
+  <p>Bid Price: ₹400</p>
+  <p>Time Remaining: 1 day</p>
+  <button>Bid Now</button>
+</div>
+
+<!-- Product Card 3 -->
+<div class="product-card">
+  <img src="product3.jpg" alt="Leather Bag">
+  <h3>Leather Shoulder Bag</h3>
+  <p>A stylish and durable leather shoulder bag perfect for work or travel.</p>
+  <p>Bid Price: ₹700</p>
+  <p>Time Remaining: 1 day</p>
+  <button>Bid Now</button>
+</div>
+
+<!-- Product Card 4 -->
+<div class="product-card">
+  <img src="product4.jpg" alt="Puma Shoe">
+  <h3>Puma Running Shoes</h3>
+  <p>High-quality Puma running shoes designed for comfort and performance.</p>
+  <p>Bid Price: ₹1000</p>
+  <p>Time Remaining: 1 day</p>
+  <button>Bid Now</button>
+</div>
 		</section>
 	</main>
 	<footer>
