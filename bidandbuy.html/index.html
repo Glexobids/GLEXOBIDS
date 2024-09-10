@@ -3,21 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bid&Buy</title>
+	<title>Bid & Buy</title>
 	<style>
 		body {
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
 		}
-		
 		header {
 			background-color: #333;
 			color: #fff;
 			padding: 1em;
 			text-align: center;
 		}
-		
 		nav ul {
 			list-style: none;
 			margin: 0;
@@ -28,33 +26,69 @@
 			background-color: #333;
 			padding: 1em;
 		}
-		
 		nav li {
 			margin-right: 20px;
 		}
-		
 		nav a {
 			color: #fff;
 			text-decoration: none;
 		}
-		
 		nav a:hover {
 			color: #ccc;
 		}
-		
 		nav .active {
 			color: #fff;
 			background-color: #444;
 			padding: 0.5em;
 			border-radius: 5px;
 		}
-		
 		main {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		
+		.product-listing {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 2em;
+		}
+		.product-cards {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.product-card {
+			margin: 1em;
+			padding: 1em;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			width: 20%;
+		}
+		.product-card img {
+			width: 100%;
+			height: 150px;
+			object-fit: cover;
+			border-radius: 10px 10px 0 0;
+		}
+		.product-card h3 {
+			font-weight: bold;
+			margin-bottom: 0.5em;
+		}
+		.product-card p {
+			margin-bottom: 1em;
+		}
+		.product-card button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 0.5em 1em;
+			font-size: 1.2em;
+			cursor: pointer;
+		}
+		.product-card button:hover {
+			background-color: #444;
+		}
 		footer {
 			background-color: #333;
 			color: #fff;
@@ -62,13 +96,10 @@
 			text-align: center;
 			clear: both;
 		}
-		
-		/* Responsive design */
 		@media only screen and (max-width: 600px) {
 			nav ul {
 				flex-direction: column;
 			}
-			
 			nav li {
 				margin-right: 0;
 			}
@@ -81,21 +112,55 @@
 			<ul>
 				<li><a href="#" class="active">Home</a></li>
 				<li><a href="#">Browse Products</a></li>
-				<li><a href="#">Sell on Bid&Buy</a></li>
+				<li><a href="#">Sell on Bid & Buy</a></li>
 				<li><a href="#">My Account</a></li>
 				<li><a href="#">Help & Support</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<!-- Homepage content goes here -->
+		<section class="product-listing">
+			<h2>Products</h2>
+			<div class="product-cards">
+				<!-- Product Card 1 -->
+				<div class="product-card">
+					<img src="product1.jpg" alt="Product 1">
+					<h3>Product 1</h3>
+					<p>Product Description 1</p>
+					<p>Bid Price: ₹200</p>
+					<p>Time Remaining: 2 days</p>
+					<button>Bid Now</button>
+				</div>
+				<!-- Product Card 2 -->
+				<div class="product-card">
+					<img src="product2.jpg" alt="Product 2">
+					<h3>Product 2</h3>
+					<p>Product Description 2</p>
+					<p>Bid Price: ₹400</p>
+					<p>Time Remaining: 1 day</p>
+					<button>Bid Now</button>
+				</div>
+				<!-- Product Card 3 -->
+				<div class="product-card">
+					<img src="product3.jpg" alt="Product 3">
+					<h3>Product 3</h3>
+					<p>Product Description 3</p>
+					<p>Bid Price: ₹700</p>
+					<p>Time Remaining: 1 day</p>
+					<button>Bid Now</button>
+				</div>
+				<!-- Product Card 4 -->
+				<div class="product-card">
+					<img src="product4.jpg" alt="Product 4">
+					<h3>Product 4</h3>
+					<p>Product Description 4</p>
+					<p>Bid Price: ₹1000</p>
+					<p>Time Remaining: 1 day</p>
+					<button>Bid Now</button>
+				</div>
+		</section>
 	</main>
 	<footer>
-		<p>&copy; 2024 Bid&Buy</p>
+		<p>&copy; 2024 Bid & Buy</p>
 	</footer>
-	<script>
-		// JavaScript code goes here
-		console.log("Bid&Buy is ready!");
-	</script>
-</body>
-</html>
+	<script
